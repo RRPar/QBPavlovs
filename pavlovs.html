@@ -1,0 +1,67 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="pavlovs.css">
+        <title>QBStudy - Pavlovs</title>
+    </head>
+
+    <body>
+        <script src="app.js" defer></script>
+        <div class="center-bar">
+            <div class="center-title">
+                <a class="qb" href="index.html">QB</a><a class="study" href="index.html">Study</a>
+            </div>
+            <a class="nav-element" href="index.html">Home</a>
+            <a class="nav-element" href="pavlovs.html" style="color: rgb(29, 29, 29);">Pavlovs</a>
+            <a class="nav-element" href="settings.html">Settings</a>
+        </div>
+
+        <div class="main-text">
+            <p>Welcome to the Pavlovs Page</p>
+            <p>How To Use:</p>
+            <ol>1. Select Category: 
+                <select class="inputs" name = "Topics" id="TopicsField" style="color: rgb(165, 165, 165);">
+                    <option value="" selected style="color: rgb(165, 165, 165);">Category</option>
+                    <option value="Literature" class="specific-input">Literature</option>
+                    <option value="History" class="specific-input">History</option>
+                    <option value="Science" class="specific-input">Science</option>
+                    <option value="Fine Arts" class="specific-input">Fine Arts</option>
+                    <option value="Religion" class="specific-input">Religion</option>
+                    <option value="Mythology" class="specific-input">Mythology</option>
+                    <option value="Philosophy" class="specific-input">Philosophy</option>
+                    <option value="Social Science" class="specific-input">Social Science</option>
+                    <option value="Current Events" class="specific-input">Current Events</option>
+                    <option value="Geography" class="specific-input">Geography</option>
+                    <option value="Other Academic" class="specific-input">Other Academic</option>
+                    <option value="Pop Culture" class="specific-input">Pop Culture</option>
+                </select>
+                <select class="inputs" name = "Subcategories" id="SubcategoryField" style="color: rgb(165, 165, 165); visibility: hidden;">
+                    <option value="" selected style="color: rgb(165, 165, 165);">All</option>
+                    <option value="American Literature" class="specific-input" id = "SubValue1">American Literature</option>
+                    <option value="British Literature" class="specific-input" id = "SubValue2">British Literature</option>
+                    <option value="Classical Literature" class="specific-input" id = "SubValue3">Classical Literature</option>
+                    <option value="European Literature" class="specific-input" id = "SubValue4">European Literature</option>
+                    <option value="World Literature" class="specific-input" id = "SubValue5">World Literature</option>
+                    <option value="Other Literature" class="specific-input" id = "SubValue6">Other Literature</option>
+                </select>
+                <select class="inputs" name = "Altcategories" id="AltcategoryField" style="color: rgb(165, 165, 165); visibility: hidden;">
+                    <option value="" selected style="color: rgb(165, 165, 165);">All</option>
+                    <option value="Drama" class="specific-input" id = "AltValue1">Drama</option>
+                    <option value="Long Fiction" class="specific-input" id = "AltValue2">Long Fiction</option>
+                    <option value="Poetry" class="specific-input" id = "AltValue3">Poetry</option>
+                    <option value="Short Fiction" class="specific-input" id = "AltValue4">Short Fiction</option>
+                    <option value="Misc Literature" class="specific-input" id = "AltValue5">Misc Literature</option>
+                    <option value="" class="specific-input" id = "AltValue6" style="visibility: hidden;"></option>
+                </select>
+            </ol>
+            <ol>2. Input Difficulty Numbers (Seperated by comma, 0-10): <input class="inputs" type="text" id = "DifficultiesField"></ol>
+            <ol>3. Input Tossup Answer (Not case sensitive): <input class="inputs" type="text" id = "AnswerField"></ol>
+            <ol>4. Input Minimum Pavlov Occurences (1-10): <input class="inputs" type="text" id = "MinimumField"></ol>
+            <ol>5. Input Minimum Certainty (0-1): <input class="inputs" type="text" id = "CertaintyField"></ol>
+            <ol>6. Press Find <button class="inputs" type="button" id = "FindButton">Find</button></ol>
+            <ol>7. Export to Quizlet or Anki <button class="inputs" type="button">Export to Quizlet</button> <button class="inputs" type="button">Export to Anki</button></ol>
+        </div>
+    </body>
+
+</html>
