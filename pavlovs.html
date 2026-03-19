@@ -60,8 +60,13 @@
             <ol>4. Input Minimum Pavlov Occurences (1-10): <input class="inputs" type="text" id = "MinimumField"></ol>
             <ol>5. Input Minimum Certainty (0-1): <input class="inputs" type="text" id = "CertaintyField"></ol>
             <ol>6. Press Find <button class="inputs" type="button" id = "FindButton">Find</button></ol>
-            <ol>7. Export to Quizlet or Anki <button class="inputs" type="button">Export to Quizlet</button> <button class="inputs" type="button">Export to Anki</button></ol>
+            <ol>7. Copy results <button class="inputs" type="button" id="CopyButton" disabled>Copy Pavlovs</button></ol>
         </div>
+
+        <section class="results-panel">
+            <p class="status-message" id="StatusMessage">Preparing worker...</p>
+            <div class="output-box" id="PavlovOutput">Your pavlov list will appear here.</div>
+        </section>
     </body>
 
 </html>

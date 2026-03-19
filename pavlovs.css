@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +23,7 @@ html, body {
 }
 
 .specific-input {
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
 }
 
 .main-text {
@@ -30,4 +31,62 @@ html, body {
     padding-top: 1%;
     font-size: clamp(14px, 1vw, 30px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}   
+}
+
+.results-panel {
+    padding: 1% 10% 4%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.status-message {
+    font-size: clamp(16px, 1vw, 22px);
+}
+
+.status-message[data-tone="success"] {
+    color: rgb(32, 111, 59);
+}
+
+.status-message[data-tone="error"] {
+    color: rgb(170, 38, 38);
+}
+
+.result-empty {
+    color: rgb(95, 95, 95);
+    font-size: 16px;
+    text-align: center;
+}
+
+.output-box {
+    background-color: rgb(244, 247, 248);
+    border: 1px solid rgb(212, 221, 223);
+    border-radius: 10px;
+    padding: 24px;
+    min-height: 180px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 24px auto 0;
+    font-size: 17px;
+    line-height: 1.4;
+    font-family: "Georgia", "Times New Roman", serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px 48px;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.result-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.result-row {
+    width: 220px;
+    text-align: center;
+    break-inside: avoid;
+    padding: 8px 0;
+}
